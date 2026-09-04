@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const title = module.querySelector("h3");
       if (title) {
         alert(title.textContent + " section selected");
-        });
+        }
       });
     });
 });
