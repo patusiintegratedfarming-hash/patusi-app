@@ -1,10 +1,384 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>PATUSI Integrated Farming</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b6b3a">
+<title>PATUSI Integrated Farming</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+  background:#f4f7f5;
+  color:#173222;
+}
+
+.header{
+  background:linear-gradient(135deg,#075b32,#0b8a4a);
+  color:white;
+  padding:22px 18px 28px;
+  border-radius:0 0 24px 24px;
+}
+
+.brand{
+  font-size:25px;
+  font-weight:800;
+  letter-spacing:.5px;
+}
+
+.subtitle{
+  margin-top:6px;
+  opacity:.9;
+  font-size:13px;
+}
+
+.container{
+  padding:18px;
+  max-width:900px;
+  margin:auto;
+}
+
+.welcome{
+  margin-bottom:18px;
+}
+
+.welcome h2{
+  font-size:22px;
+  margin-bottom:5px;
+}
+
+.welcome p{
+  color:#6b786f;
+  font-size:14px;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  margin-bottom:22px;
+}
+
+.stat{
+  background:white;
+  border-radius:17px;
+  padding:17px;
+  box-shadow:0 4px 14px rgba(0,0,0,.06);
+}
+
+.stat-icon{
+  font-size:25px;
+  margin-bottom:8px;
+}
+
+.stat-title{
+  color:#718077;
+  font-size:12px;
+}
+
+.stat-value{
+  font-size:22px;
+  font-weight:800;
+  margin-top:4px;
+}
+
+.section-title{
+  font-size:18px;
+  font-weight:800;
+  margin:20px 0 12px;
+}
+
+.modules{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+}
+
+.module{
+  background:white;
+  border:1px solid #e4ebe6;
+  border-radius:17px;
+  padding:18px 14px;
+  min-height:125px;
+  box-shadow:0 4px 14px rgba(0,0,0,.045);
+  transition:.2s;
+}
+
+.module:active{
+  transform:scale(.98);
+}
+
+.module-icon{
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+.module h3{
+  font-size:15px;
+  margin-bottom:5px;
+}
+
+.module p{
+  color:#78857d;
+  font-size:11px;
+  line-height:1.4;
+}
+
+.quick{
+  background:white;
+  border-radius:18px;
+  padding:18px;
+  margin-top:20px;
+  box-shadow:0 4px 14px rgba(0,0,0,.05);
+}
+
+.quick-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:13px 0;
+  border-bottom:1px solid #edf1ee;
+}
+
+.quick-row:last-child{
+  border-bottom:none;
+}
+
+.quick-left{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.quick-icon{
+  width:38px;
+  height:38px;
+  border-radius:11px;
+  background:#e9f6ee;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:18px;
+}
+
+.quick-text strong{
+  display:block;
+  font-size:13px;
+}
+
+.quick-text span{
+  color:#7b887f;
+  font-size:11px;
+}
+
+.bottom{
+  text-align:center;
+  padding:30px 10px 20px;
+  color:#89958d;
+  font-size:11px;
+}
+
+@media(min-width:650px){
+  .stats{
+    grid-template-columns:repeat(4,1fr);
+  }
+
+  .modules{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+</style>
 </head>
+
 <body>
-  <h1>PATUSI Integrated Farming</h1>
-  <p>Professional farming and business management system.</p>
+
+<header class="header">
+  <div class="brand">PATUSI INTEGRATED FARMING</div>
+  <div class="subtitle">Professional Farming & Business Management System</div>
+</header>
+
+<main class="container">
+
+  <section class="welcome">
+    <h2>Farm Dashboard</h2>
+    <p>Manage your farming operations from one place.</p>
+  </section>
+
+  <section class="stats">
+
+    <div class="stat">
+      <div class="stat-icon">🌾</div>
+      <div class="stat-title">Farm Units</div>
+      <div class="stat-value">0</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-icon">🐟</div>
+      <div class="stat-title">Catfish Stock</div>
+      <div class="stat-value">0</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-icon">🐔</div>
+      <div class="stat-title">Poultry Stock</div>
+      <div class="stat-value">0</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-icon">💰</div>
+      <div class="stat-title">Today's Sales</div>
+      <div class="stat-value">₦0</div>
+    </div>
+
+  </section>
+
+  <div class="section-title">Farm Management</div>
+
+  <section class="modules">
+
+    <div class="module">
+      <div class="module-icon">📊</div>
+      <h3>Dashboard</h3>
+      <p>View your farm performance and important figures.</p>
+    </div>
+
+    <div class="module">
+      <div class="module-icon">🌱</div>
+      <h3>Farm Overview</h3>
+      <p>Manage farms, units, activities and production areas.</p>
+    </div>
+
+    <div class="module">
+      <div class="module-icon">🐔</div>
+      <h3>Poultry / Layers</h3>
+      <p>Track birds, eggs, mortality, feed and production.</p>
+    </div>
+
+    <div class="module">
+      <div class="module-icon">🐟</div>
+      <h3>Catfish</h3>
+      <p>Manage ponds, stocking, feeding, growth and harvest.</p>
+    </div>
+
+    <div class="module">
+      <div class="module-icon">🐐</div>
+      <h3>Goats</h3>
+      <p>Record animals, breeding, feeding and health records.</p>
+    </div>
+
+    <div class="module">
+      <div class="module-icon">🥣</div>
+      <h3>Feed Management</h3>
+      <p>Track feed stock, usage, purchases and feed types.</p>
+    </div>
+
+    <div class="module">
+      <div class="module-icon">🧪</div>
+      <h3>Feed Formulation</h3>
+      <p>Create and manage professional feed formulations.</p>
+    </div>
+
+    <div class="module">
+      <div class="module-icon">📦</div>
+      <h3>Inventory / Stock</h3>
+      <p>Monitor products, supplies, quantities and stock levels.</p>
+    </div>
+
+    <div class="module">
+      <div class="module-icon">🛒</div>
+      <h3>Sales</h3>
+      <p>Record sales, customers, products and payments.</p>
+    </div>
+
+    <div class="module">
+      <div class="module-icon">💳</div>
+      <h3>Expenses</h3>
+      <p>Track farm expenses and operating costs.</p>
+    </div>
+
+    <div class="module">
+      <div class="module-icon">👥</div>
+      <h3>Customers</h3>
+      <p>Manage customer information and purchase history.</p>
+    </div>
+
+    <div class="module">
+      <div class="module-icon">🚚</div>
+      <h3>Suppliers</h3>
+      <p>Manage suppliers, purchases and supplier records.</p>
+    </div>
+
+    <div class="module">
+      <div class="module-icon">👷</div>
+      <h3>Employees / Workers</h3>
+      <p>Manage workers, roles, attendance and records.</p>
+    </div>
+
+    <div class="module">
+      <div class="module-icon">📋</div>
+      <h3>Farm Records</h3>
+      <p>Keep organized records of farm activities.</p>
+    </div>
+
+    <div class="module">
+      <div class="module-icon">📈</div>
+      <h3>Reports</h3>
+      <p>Generate business, production and financial reports.</p>
+    </div>
+
+  </section>
+
+  <div class="section-title">Quick Overview</div>
+
+  <section class="quick">
+
+    <div class="quick-row">
+      <div class="quick-left">
+        <div class="quick-icon">📅</div>
+        <div class="quick-text">
+          <strong>Farm Activities</strong>
+          <span>No activities recorded yet</span>
+        </div>
+      </div>
+      <span>›</span>
+    </div>
+
+    <div class="quick-row">
+      <div class="quick-left">
+        <div class="quick-icon">🔔</div>
+        <div class="quick-text">
+          <strong>Notifications</strong>
+          <span>No new notifications</span>
+        </div>
+      </div>
+      <span>›</span>
+    </div>
+
+    <div class="quick-row">
+      <div class="quick-left">
+        <div class="quick-icon">💹</div>
+        <div class="quick-text">
+          <strong>Financial Summary</strong>
+          <span>Income and expenses will appear here</span>
+        </div>
+      </div>
+      <span>›</span>
+    </div>
+
+  </section>
+
+  <div class="bottom">
+    PATUSI INTEGRATED FARMING<br>
+    Professional Farming & Business Management System
+  </div>
+
+</main>
+
 </body>
 </html>
