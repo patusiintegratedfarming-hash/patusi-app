@@ -8,7 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const title = module.querySelector("h3");
       if (title) {
         alert(title.textContent + " section selected");
+        if (title.textContent === "Farm Overview") {
+          document.getElementById("farm-overview-page").style.display = "block";
+          return;
         }
+        });
       });
     });
-});
