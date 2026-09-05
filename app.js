@@ -111,3 +111,27 @@ if (savedBirds !== null && poultryStock) {
   }
 
 });
+// Egg Production
+const eggButton = document.getElementById("egg-production-button");
+const eggForm = document.getElementById("egg-form");
+const saveEggButton = document.getElementById("save-egg-button");
+const eggNumber = document.getElementById("egg-number");
+
+if (eggButton && eggForm) {
+  eggButton.addEventListener("click", function () {
+    eggForm.style.display = "block";
+  });
+}
+
+if (saveEggButton && eggNumber) {
+  saveEggButton.addEventListener("click", function () {
+    const eggs = eggNumber.value;
+
+    if (eggs !== "") {
+      localStorage.setItem("patusiEggsToday", eggs);
+      alert("Egg production saved successfully.");
+    } else {
+      alert("Please enter the number of eggs.");
+    }
+  });
+     }
