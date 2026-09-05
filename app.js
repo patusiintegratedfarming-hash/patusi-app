@@ -157,6 +157,7 @@ const feedButton = document.getElementById("feed-record-button");
 const feedForm = document.getElementById("feed-form");
 const saveFeedButton = document.getElementById("save-feed-button");
 const feedAmount = document.getElementById("feed-amount");
+const feedUsedDisplay = document.getElementById("feed-used");
 
 if (feedButton && feedForm) {
   feedButton.addEventListener("click", function () {
@@ -167,13 +168,14 @@ if (feedButton && feedForm) {
 if (saveFeedButton && feedAmount) {
   saveFeedButton.addEventListener("click", function () {
     const feedUsed = feedAmount.value;
-const feedUsedDisplay = document.getElementById("feed-used");
 
-if (feedUsedDisplay) {
-  feedUsedDisplay.textContent = feedUsed + " kg";
-}
     if (feedUsed !== "") {
       localStorage.setItem("patusiFeedUsed", feedUsed);
+
+      if (feedUsedDisplay) {
+        feedUsedDisplay.textContent = feedUsed + " kg";
+      }
+
       alert("Feed record saved successfully.");
     } else {
       alert("Please enter the feed amount.");
