@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+alert("PATUSI JavaScript is working");
   const modules = document.querySelectorAll(".module");
     modules.forEach(function (module) {
          module.addEventListener("click", function () {
