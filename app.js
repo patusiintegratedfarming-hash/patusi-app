@@ -22,6 +22,21 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("poultry-page").style.display = "block";
 
       }
+            const addBirdButton = module.querySelector("button");
+
+      if (title && title.textContent.trim() === "Birds" && addBirdButton) {
+
+        addBirdButton.addEventListener("click", function () {
+
+          const form = document.getElementById("bird-form");
+
+          if (form) {
+            form.style.display = "block";
+          }
+
+        });
+
+      }
     });
 
   });
