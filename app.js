@@ -15,15 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("farm-overview-page").style.display = "block";
 
       }
+      if (title && title.textContent.trim() === "Poultry / Layers") {
 
+        document.getElementById("farm-overview-page").style.display = "none";
+
+        document.getElementById("poultry-page").style.display = "block";
+
+      }
     });
 
   });
-    if (title && title.textContent.trim() === "Poultry / Layers") {
-
-      document.getElementById("farm-overview-page").style.display = "none";
-
-      document.getElementById("poultry-page").style.display = "block";
-
-    }
 });
