@@ -45,7 +45,15 @@ document.addEventListener("DOMContentLoaded", function () {
   if (saveBirdButton) {
 
     saveBirdButton.addEventListener("click", function () {
+      const numberInput = document.querySelector("#bird-form input[type='number']");
 
+      if (numberInput) {
+        const totalBirds = document.getElementById("total-birds");
+
+        if (totalBirds) {
+          totalBirds.textContent = numberInput.value;
+        }
+      }
       alert("Bird record saved successfully.");
 
     });
