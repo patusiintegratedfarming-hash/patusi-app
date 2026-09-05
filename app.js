@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   //  saved bird total when the app loads
-  functionRestore restoreBirdTotal() {
+  function restoreBirdTotal() {
     const savedBirds = localStorage.getItem("patusiTotalBirds");
     const totalBirds = document.getElementById("total-birds");
 
@@ -52,6 +52,12 @@ if (savedEggs !== null && eggsToday) {
 
         // Restore saved total whenever Poultry opens
         restoreBirdTotal();
+        const savedEggs = localStorage.getItem("patusiEggsToday");
+const eggsToday = document.getElementById("eggs-today");
+
+if (savedEggs !== null && eggsToday) {
+  eggsToday.textContent = savedEggs;
+}
       }
 
       // Birds
