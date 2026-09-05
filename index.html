@@ -381,9 +381,89 @@ body{
 
 </main>
 
-  <div id="farm-overview-page" style="display:none; background:white; padding:20px; margin-top:20px; border-radius:15px;">
-    <h2>Farm Overview</h2>
-    <p>Monitor your farm units, production, livestock, and daily activities from one place.</p>
+  <div id="farm-overview-page" style="display:none;">
+
+  <div style="background:linear-gradient(135deg,#075b32,#0b8a4a);color:white;padding:22px 18px;border-radius:18px;margin-bottom:18px;">
+    <h2 style="font-size:22px;margin-bottom:6px;">Farm Overview</h2>
+    <p style="font-size:13px;opacity:.9;">Monitor your farm units, production, livestock, and daily activities.</p>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:20px;">
+
+    <div class="stat">
+      <div class="stat-icon">🌾</div>
+      <div class="stat-title">Farm Units</div>
+      <div class="stat-value">0</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-icon">🐔</div>
+      <div class="stat-title">Poultry</div>
+      <div class="stat-value">0</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-icon">🐟</div>
+      <div class="stat-title">Catfish</div>
+      <div class="stat-value">0</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-icon">🐐</div>
+      <div class="stat-title">Goats</div>
+      <div class="stat-value">0</div>
+    </div>
+
+  </div>
+
+  <div class="section-title">Farm Units</div>
+
+  <div class="module" style="margin-bottom:12px;">
+    <div class="module-icon">🐔</div>
+    <h3>Poultry / Layers</h3>
+    <p>Manage birds, eggs, feed, mortality and production records.</p>
+  </div>
+
+  <div class="module" style="margin-bottom:12px;">
+    <div class="module-icon">🐟</div>
+    <h3>Catfish Farm</h3>
+    <p>Manage ponds, stocking, feeding, growth and harvest records.</p>
+  </div>
+
+  <div class="module" style="margin-bottom:12px;">
+    <div class="module-icon">🐐</div>
+    <h3>Goat Farm</h3>
+    <p>Manage animals, breeding, feeding and farm records.</p>
+  </div>
+
+  <div class="section-title">Quick Actions</div>
+
+  <div class="quick">
+
+    <div class="quick-row">
+      <div class="quick-left">
+        <div class="quick-icon">➕</div>
+        <div class="quick-text">
+          <strong>Add Farm Unit</strong>
+          <span>Create a new poultry, catfish or goat unit</span>
+        </div>
+      </div>
+      <span>›</span>
+    </div>
+
+    <div class="quick-row">
+      <div class="quick-left">
+        <div class="quick-icon">📋</div>
+        <div class="quick-text">
+          <strong>Farm Records</strong>
+          <span>View and manage farm activities</span>
+        </div>
+      </div>
+      <span>›</span>
+    </div>
+
+  </div>
+
   </div>
   <script src="./app.js?v=3" defer></script>
 </body>
