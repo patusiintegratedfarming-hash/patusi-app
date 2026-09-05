@@ -15,6 +15,12 @@ if (savedBirds !== null && poultryStock) {
 }
   }
 const savedEggs = localStorage.getItem("patusiEggsToday");
+  const savedFeed = localStorage.getItem("patusiFeedUsed");
+const feedUsedDisplay = document.getElementById("feed-used");
+
+if (savedFeed !== null && feedUsedDisplay) {
+  feedUsedDisplay.textContent = savedFeed + " kg";
+}
 const eggsToday = document.getElementById("eggs-today");
 
 if (savedEggs !== null && eggsToday) {
