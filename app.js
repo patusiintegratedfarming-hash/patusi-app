@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const title = module.querySelector("h3");
 
       if (title && title.textContent.trim() === "Farm Overview") {
+        alert("Page found: " + !!document.getElementById("farm-overview-page"));
         document.getElementById("farm-overview-page").style.display = "block";
       }
     });
