@@ -146,3 +146,27 @@ if (saveEggButton && eggNumber) {
     }
   });
      }
+// Feed Records
+const feedButton = document.getElementById("feed-record-button");
+const feedForm = document.getElementById("feed-form");
+const saveFeedButton = document.getElementById("save-feed-button");
+const feedAmount = document.getElementById("feed-amount");
+
+if (feedButton && feedForm) {
+  feedButton.addEventListener("click", function () {
+    feedForm.style.display = "block";
+  });
+}
+
+if (saveFeedButton && feedAmount) {
+  saveFeedButton.addEventListener("click", function () {
+    const feedUsed = feedAmount.value;
+
+    if (feedUsed !== "") {
+      localStorage.setItem("patusiFeedUsed", feedUsed);
+      alert("Feed record saved successfully.");
+    } else {
+      alert("Please enter the feed amount.");
+    }
+  });
+}
