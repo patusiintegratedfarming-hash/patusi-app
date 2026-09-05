@@ -88,7 +88,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (totalBirds) {
           totalBirds.textContent = numberOfBirds;
         }
+        const poultryStock = document.getElementById("poultry-stock");
 
+        if (poultryStock) {
+          poultryStock.textContent = numberOfBirds;
+        }
         alert("Bird record saved successfully.");
 
       } else {
