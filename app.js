@@ -8,6 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (savedBirds !== null && totalBirds) {
       totalBirds.textContent = savedBirds;
     }
+    const poultryStock = document.getElementById("poultry-stock");
+
+if (savedBirds !== null && poultryStock) {
+  poultryStock.textContent = savedBirds;
+}
   }
 
   // Restore immediately
