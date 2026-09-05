@@ -40,4 +40,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
   });
+  const saveBirdButton = document.querySelector("#bird-form button");
+
+  if (saveBirdButton) {
+
+    saveBirdButton.addEventListener("click", function () {
+
+      alert("Bird record saved successfully.");
+
+    });
+
+  }
 });
