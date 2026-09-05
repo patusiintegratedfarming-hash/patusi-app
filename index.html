@@ -530,9 +530,25 @@ body{
   </div>
 
   <div class="module" style="margin-bottom:12px;">
-    <div class="module-icon">🥚</div>
-    <h3>Egg Production</h3>
-    <p>Record daily egg production and monitor performance.</p>
+  <div class="module-icon">🥚</div>
+  <h3>Egg Production</h3>
+  <p>Record daily egg production and monitor performance.</p>
+
+  <div style="margin-top:12px;">
+    <button id="egg-production-button" style="background:#075b32;color:white;border:none;padding:10px 16px;border-radius:8px;">
+      Record Egg Production
+    </button>
+
+    <div id="egg-form" style="display:none;margin-top:15px;background:#f7f7f7;padding:15px;border-radius:12px;">
+      <h3 style="margin-bottom:12px;">Record Egg Production</h3>
+
+      <input id="egg-number" type="number" placeholder="Number of eggs produced" style="width:100%;padding:10px;margin-bottom:10px;border:1px solid #ddd;border-radius:8px;">
+
+      <button id="save-egg-button" style="background:#075b32;color:white;border:none;padding:10px 16px;border-radius:8px;">
+        Save Egg Record
+      </button>
+    </div>
+  </div>
   </div>
 
   <div class="module" style="margin-bottom:12px;">
