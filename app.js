@@ -161,7 +161,11 @@ if (feedButton && feedForm) {
 if (saveFeedButton && feedAmount) {
   saveFeedButton.addEventListener("click", function () {
     const feedUsed = feedAmount.value;
+const feedUsedDisplay = document.getElementById("feed-used");
 
+if (feedUsedDisplay) {
+  feedUsedDisplay.textContent = feedUsed + " kg";
+}
     if (feedUsed !== "") {
       localStorage.setItem("patusiFeedUsed", feedUsed);
       alert("Feed record saved successfully.");
