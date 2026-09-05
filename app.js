@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const savedBirds = localStorage.getItem("patusiTotalBirds");
+  const totalBirds = document.getElementById("total-birds");
+
+  if (savedBirds && totalBirds) {
+    totalBirds.textContent = savedBirds;
+  }
 
   const modules = document.querySelectorAll(".module");
 
@@ -52,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (totalBirds) {
           totalBirds.textContent = numberInput.value;
+                    localStorage.setItem("patusiTotalBirds", numberInput.value);
         }
       }
       alert("Bird record saved successfully.");
