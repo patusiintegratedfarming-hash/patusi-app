@@ -11,6 +11,7 @@ alert("Title is: [" + title.textContent.trim() + "]");
       if (title && title.textContent.trim() === "Farm Overview") {
         alert("Page found: " + !!document.getElementById("farm-overview-page"));
         document.getElementById("farm-overview-page").style.display = "block";
+        alert("Display is now: " + document.getElementById("farm-overview-page").style.display);
       }
     });
   });
